@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +16,79 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-mB-80j">
+                                <rect key="frame" x="16" y="28" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="avO-yG-dx6"/>
+                                </constraints>
+                                <state key="normal" title="Left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNO-us-Pne">
+                                <rect key="frame" x="511" y="28" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="k7E-En-S2S"/>
+                                </constraints>
+                                <state key="normal" title="right"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C4Q-1U-H2F">
+                                <rect key="frame" x="21" y="93" width="563" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="third"/>
+                                    <segment title="four"/>
+                                </segments>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-My-EPc">
+                                <rect key="frame" x="21" y="195" width="563" height="183"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="Qdv-Ru-raT"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0q-zf-Wqt">
+                                <rect key="frame" x="29" y="166" width="555" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERM-Tc-H5o">
+                                <rect key="frame" x="21" y="550" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="KeT-cc-SbN"/>
+                                </constraints>
+                                <state key="normal" title="Left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlO-u5-FLF">
+                                <rect key="frame" x="511" y="550" width="79" height="30"/>
+                                <state key="normal" title="right"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bkd-My-EPc" firstAttribute="leading" secondItem="ERM-Tc-H5o" secondAttribute="leading" id="35E-UX-vmo"/>
+                            <constraint firstItem="bkd-My-EPc" firstAttribute="top" secondItem="y0q-zf-Wqt" secondAttribute="bottom" constant="8" symbolic="YES" id="CuU-6g-ugY"/>
+                            <constraint firstItem="QlO-u5-FLF" firstAttribute="trailing" secondItem="BNO-us-Pne" secondAttribute="trailing" id="EHO-Um-0V7"/>
+                            <constraint firstItem="QlO-u5-FLF" firstAttribute="leading" secondItem="BNO-us-Pne" secondAttribute="leading" id="Ece-hs-tDr"/>
+                            <constraint firstAttribute="bottom" secondItem="ERM-Tc-H5o" secondAttribute="bottom" constant="20" symbolic="YES" id="K0a-b6-bXd"/>
+                            <constraint firstItem="C4Q-1U-H2F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="MM7-iB-667"/>
+                            <constraint firstItem="C4Q-1U-H2F" firstAttribute="trailing" secondItem="y0q-zf-Wqt" secondAttribute="trailing" id="NL7-O9-ULB"/>
+                            <constraint firstItem="ERM-Tc-H5o" firstAttribute="baseline" secondItem="QlO-u5-FLF" secondAttribute="baseline" id="UmP-uP-vYY"/>
+                            <constraint firstItem="WV0-mB-80j" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="Wt7-tU-gk4"/>
+                            <constraint firstItem="bkd-My-EPc" firstAttribute="leading" secondItem="C4Q-1U-H2F" secondAttribute="leading" id="bwD-Vx-AYm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BNO-us-Pne" secondAttribute="trailing" constant="-6" id="cNp-v6-G4Q"/>
+                            <constraint firstItem="y0q-zf-Wqt" firstAttribute="top" secondItem="C4Q-1U-H2F" secondAttribute="bottom" constant="45" id="cxr-ux-qfe"/>
+                            <constraint firstItem="y0q-zf-Wqt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="13" id="elU-7B-79n"/>
+                            <constraint firstItem="WV0-mB-80j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jWc-vX-lsr"/>
+                            <constraint firstItem="C4Q-1U-H2F" firstAttribute="top" secondItem="WV0-mB-80j" secondAttribute="bottom" constant="35" id="maJ-jq-lU6"/>
+                            <constraint firstItem="WV0-mB-80j" firstAttribute="baseline" secondItem="BNO-us-Pne" secondAttribute="baseline" id="mt7-bl-I6X"/>
+                            <constraint firstItem="bkd-My-EPc" firstAttribute="trailing" secondItem="y0q-zf-Wqt" secondAttribute="trailing" id="ngg-Ic-gvp"/>
+                            <constraint firstItem="bkd-My-EPc" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="z2U-FG-qME"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

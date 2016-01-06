@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D9592E1BCBFAAE009A7F9D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D9592D1BCBFAAE009A7F9D /* CoreData.framework */; };
+		48D959311BCBFBE5009A7F9D /* AutoLayout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48D9592F1BCBFBE5009A7F9D /* AutoLayout.xcdatamodeld */; };
+		48D9593E1BD616C0009A7F9D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D9593D1BD616C0009A7F9D /* Person.m */; };
 		48DF28721B012E180011EF03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF28711B012E180011EF03 /* main.m */; };
 		48DF28751B012E180011EF03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF28741B012E180011EF03 /* AppDelegate.m */; };
 		48DF28781B012E180011EF03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF28771B012E180011EF03 /* ViewController.m */; };
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48D9592D1BCBFAAE009A7F9D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		48D959301BCBFBE5009A7F9D /* AutoLayout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoLayout.xcdatamodel; sourceTree = "<group>"; };
+		48D959351BD60C75009A7F9D /* AutoLayout 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AutoLayout 2.xcdatamodel"; sourceTree = "<group>"; };
+		48D9593C1BD616C0009A7F9D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = AutoLayout/Person.h; sourceTree = "<group>"; };
+		48D9593D1BD616C0009A7F9D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = AutoLayout/Person.m; sourceTree = "<group>"; };
 		48DF286C1B012E180011EF03 /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48DF28701B012E180011EF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48DF28711B012E180011EF03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D9592E1BCBFAAE009A7F9D /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,9 @@
 		48DF28631B012E180011EF03 = {
 			isa = PBXGroup;
 			children = (
+				48D9593C1BD616C0009A7F9D /* Person.h */,
+				48D9593D1BD616C0009A7F9D /* Person.m */,
+				48D9592D1BCBFAAE009A7F9D /* CoreData.framework */,
 				48DF286E1B012E180011EF03 /* AutoLayout */,
 				48DF28881B012E180011EF03 /* AutoLayoutTests */,
 				48DF286D1B012E180011EF03 /* Products */,
@@ -85,6 +97,7 @@
 				48DF28741B012E180011EF03 /* AppDelegate.m */,
 				48DF28761B012E180011EF03 /* ViewController.h */,
 				48DF28771B012E180011EF03 /* ViewController.m */,
+				48D9592F1BCBFBE5009A7F9D /* AutoLayout.xcdatamodeld */,
 				48DF28791B012E180011EF03 /* Main.storyboard */,
 				48DF287C1B012E180011EF03 /* Images.xcassets */,
 				48DF287E1B012E180011EF03 /* LaunchScreen.xib */,
@@ -221,6 +234,8 @@
 			files = (
 				48DF28781B012E180011EF03 /* ViewController.m in Sources */,
 				48DF28751B012E180011EF03 /* AppDelegate.m in Sources */,
+				48D9593E1BD616C0009A7F9D /* Person.m in Sources */,
+				48D959311BCBFBE5009A7F9D /* AutoLayout.xcdatamodeld in Sources */,
 				48DF28721B012E180011EF03 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +431,7 @@
 				48DF28911B012E180011EF03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48DF28921B012E180011EF03 /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -424,8 +440,23 @@
 				48DF28941B012E180011EF03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48D9592F1BCBFBE5009A7F9D /* AutoLayout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48D959351BD60C75009A7F9D /* AutoLayout 2.xcdatamodel */,
+				48D959301BCBFBE5009A7F9D /* AutoLayout.xcdatamodel */,
+			);
+			currentVersion = 48D959351BD60C75009A7F9D /* AutoLayout 2.xcdatamodel */;
+			path = AutoLayout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 48DF28641B012E180011EF03 /* Project object */;
 }
